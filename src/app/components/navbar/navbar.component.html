@@ -1,0 +1,35 @@
+<section>
+    <div class="wrap">
+        <header id="header">
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <img src="/assets/Logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <div (mouseenter)="onMouseEnter()" (mouseleave)="onMouseOut()">
+                        <li>
+                            <a href="#">Products
+                                <div *ngIf="showMenu" class="sous-menu">
+                                    <app-menu-products></app-menu-products>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Other links</a></li>
+                </ul>
+            </div>
+            <div class="connexion">
+                <a href="#">Sign In</a>
+                <button class="btn-one">Try for free</button>
+            </div>
+            <div class="mobile-menu">
+                <img src="/assets/Menu.svg" alt="icone du menu mobile"
+                (click)="showNavBar()">
+            </div>
+        </header>
+    </div>
+</section>

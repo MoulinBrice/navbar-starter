@@ -1,0 +1,41 @@
+span{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    left: 30px;
+
+}
+#menu-product-wrapper{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 430px;
+    // height: 100px;
+}
+
+.menu-product__sous-menu{
+    display: flex;
+    margin-bottom: 20px;
+
+
+}
+.menu-product__sous-menu-content{
+    margin-left: 10px;
+    h6{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+}
+a{
+    text-decoration: none;
+    color: var(--color-text)
+}

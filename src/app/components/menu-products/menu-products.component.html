@@ -1,0 +1,12 @@
+<span><i class="fa-solid fa-caret-up"></i></span>
+<div id="menu-product-wrapper">
+    <a href="#">
+        <div *ngFor="let dMenu of sousMenuList" class="menu-product__sous-menu">
+            <img src="{{dMenu.icon}}" alt="icone du sous menu">
+            <div class="menu-product__sous-menu-content">
+                <h6>{{dMenu.title}}</h6>
+                <p>{{dMenu.content}}</p>
+            </div>
+        </div>
+    </a>
+</div>

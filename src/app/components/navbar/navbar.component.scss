@@ -1,0 +1,132 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-top: 30px;
+    height: 15vh;
+
+    .navbar{
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            position: relative;
+        }
+
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 20px;
+}
+a:hover:not(.logo-link){
+    color: var(--color-title);
+    border-bottom: 2px solid var(--color-title);
+}
+
+.sous-menu{
+    position: absolute;
+    top: 0px
+    // top: 190px;
+    // z-index: -1;
+}
+
+// ##################################################################################
+// ##################################################################################
+//MOBILE VERSION
+@media (max-width: 768px) {
+    #header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-top: 30px;
+        // height: 15vh;
+        position: relative;
+
+        .navbar{
+            position: absolute;
+            top: 80px;
+            // left: -150px;
+            background-color: white;
+            width: 100%;
+            padding: 0 10px;
+            display: none;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                margin: 0 0 10px;
+                padding: 0;
+            }
+            a{
+                padding: 0
+            }
+
+            .sous-menu{
+                position: absolute;
+                top: -35px;
+                left: -10px;
+                // top: 190px;
+                 z-index: 1;
+            }
+
+        }
+
+        .connexion{
+            display: none;
+        }
+
+        .mobile-menu{
+            display: block;
+        }
+    }
+
+    .wrap{
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 20px;
+    }
+    a:hover:not(.logo-link){
+        color: var(--color-title);
+        border-bottom: 2px solid var(--color-title);
+    }
+
+    .sous-menu{
+        position: absolute;
+        top: 0px
+        // top: 190px;
+        // z-index: -1;
+    }
+
+    .display{
+        display: block;
+    }
+}
